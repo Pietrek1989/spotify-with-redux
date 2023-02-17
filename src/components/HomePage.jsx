@@ -5,8 +5,6 @@ import MusicRow from "./MusicRow";
 
 const HomePage = () => {
   let searchResult = useSelector((state) => state.search.content[0]);
-
-  // {searchResult.length > 6 && let firstResult = searchResult.slice(0, 6) : "";
   let firstResult = searchResult.slice(0, 6);
   let secondResult = searchResult.slice(6, 12);
   let thirdResult = searchResult.slice(12, 18);
@@ -31,7 +29,7 @@ const HomePage = () => {
               <h4>Your top mixes</h4>
               <span className="ml-auto">SEE ALL</span>
             </div>
-            {searchResult.length > 6 && <MusicRow searchResult={firstResult} />}
+            <MusicRow searchResult={firstResult}></MusicRow>
           </div>
         </div>
       </section>
@@ -43,7 +41,7 @@ const HomePage = () => {
               <h4>Recently played</h4>
               <span className="ml-auto">SEE ALL</span>
             </div>
-            {searchResult && <MusicRow searchResult={secondResult} />}
+            <MusicRow searchResult={secondResult} />
           </div>
         </div>
       </section>
@@ -55,7 +53,7 @@ const HomePage = () => {
               <h4>Today's biggest hits</h4>
               <span className="ml-auto">SEE ALL</span>
             </div>
-            {searchResult && <MusicRow searchResult={thirdResult} />}
+            <MusicRow searchResult={thirdResult} />
           </div>
         </div>
       </section>

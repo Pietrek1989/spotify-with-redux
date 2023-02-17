@@ -1,13 +1,7 @@
 import HomePage from "./components/HomePage";
-// import NavBar from "./components/NavBar";
 import NavBar2 from "./components/NavBar2";
 import Player from "./components/Player";
 import SideBar from "./components/SideBar";
-// import "./styles/albumpage.css";
-// import "./styles/artist.css";
-// import "./styles/homepage.css";
-// import "./styles/login-page.css";
-// import "./styles/search-page.css";
 import "./styles/styles.css";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -25,7 +19,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <NavBar></NavBar> */}
         <NavBar2></NavBar2>
 
         <div className="d-flex flex-column">

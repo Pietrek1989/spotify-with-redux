@@ -72,7 +72,6 @@ const SideBar = () => {
                   onChange={(e) => getSearchValue(e.target.value)}
                 />
               </Form>
-              {/* <Button onClick={handleChange}>Search</Button> */}
             </div>
           </li>
           <li className="nav-item">

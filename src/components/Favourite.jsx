@@ -7,11 +7,6 @@ const Favourite = () => {
   return (
     <>
       <div id="favourite-body">
-        {/* <ol className="d-flex justify-content-center align-items-center">
-          {favouriteList.map((song) => (
-            <li>{song.title}</li>
-          ))}
-        </ol> */}
         <table class="table table-borderless table-hover">
           <tbody id="tbody">
             {favouriteList.map((song, i) => (

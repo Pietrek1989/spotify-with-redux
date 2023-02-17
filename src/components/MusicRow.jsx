@@ -3,9 +3,7 @@ import { addToPlayerAction } from "../redux/actions";
 
 const MusicRow = (props) => {
   const dispatch = useDispatch();
-  // const handleChange = (track) => {
-  //   dispatch(addToPlayerAction(track));
-  // };
+
   return (
     <div className="row">
       {props.searchResult.map((musicTrack) => (

@@ -1,3 +1,4 @@
+import ReactAudioPlayer from "react-audio-player";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addToFavouriteAction,
@@ -15,6 +16,11 @@ const Player = () => {
       {condition.length > 0 && (
         <nav className="navbar fixed-bottom">
           <a className="navbar-brand w-100" href="#">
+            {/* <ReactAudioPlayer
+              id="react-audio-player"
+              src={songResult.preview}
+              controls
+            ></ReactAudioPlayer> */}
             <div className="d-flex justify-content-between align-items-center">
               <div className="d-flex align-items-center gap set-width">
                 <div className="album-photo" id="player-album">

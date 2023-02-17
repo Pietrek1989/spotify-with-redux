@@ -1,0 +1,21 @@
+#favourite-body {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+#favourite-body table {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+#favourite-body tr:hover {
+  color: #1ed760 !important;
+  scale: 1.05;
+}
+
+#tbody {
+  color: white;
+}
